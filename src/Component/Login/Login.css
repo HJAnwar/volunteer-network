@@ -1,0 +1,38 @@
+.loginArea{
+    margin-top: 20%;
+    margin-left: 30%;
+    text-align: center;
+    width: 400PX;
+    height: 200PX;
+    border: 1px solid red;
+    border-radius: 10px;
+    background-color: beige;
+}
+
+.googleArea{
+    
+    margin-top: 30px;
+    border: 1px solid #4caf50;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: white;
+    height: 40px;
+
+}
+.googleArea img{
+    height: 30px;
+    margin-right: px;
+  
+}
+
+.signIn{
+    border:none;
+    outline:none;
+    background:none;
+    font-size: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+   
+}

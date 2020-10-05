@@ -1,0 +1,43 @@
+.adminArea{
+    display: flex;
+    margin-top: 30px;
+}
+.leftArea{
+    
+    margin-left: 40px;
+    width: 25%;
+    height: 700px;
+
+}
+.leftArea img{
+    width: 70%;
+}
+.rightArea{
+    width: 75%;
+    height: 700px;
+   
+    background-color: aqua;
+}
+.addList{
+    display: flex;
+    margin-top: 5px;
+    
+}
+.addList img{ 
+    width: 25px;  
+    height: 25px;
+}
+.addList small{
+    
+    margin-left: 5px;
+    font-size: 20px;
+}
+.listArea{
+    height: 700px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+   
+    background-color: azure;
+}
