@@ -1,6 +1,6 @@
 .adminArea{
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .leftArea{
     
@@ -14,9 +14,8 @@
 }
 .rightArea{
     width: 75%;
-    height: 700px;
-   
-    background-color: aqua;
+    height: 100%;
+    
 }
 .addList{
     display: flex;
@@ -33,11 +32,14 @@
     font-size: 20px;
 }
 .listArea{
-    height: 700px;
-    margin-left: 15px;
-    margin-right: 20px;
-    margin-top: 15px;
-    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(231, 231, 231, 0.568);
+    padding-right: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
    
-    background-color: azure;
+}
+.addEvent{
+    width: 100%;
+   
 }

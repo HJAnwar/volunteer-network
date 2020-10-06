@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './AddEvent.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../../img/logos/Group 1329.png';
 import add from '../../img/logos/plus 1.png'
@@ -31,19 +31,33 @@ const Admin = () => {
             </div>
             
             <div className='rightArea'>
-            <h2>hello man</h2>
+                <h2>Add Event</h2>
                 <div className='listArea'>
-                    <form action="/addItem" method='post'>
-                        <div>
-                            <input type="text" name='name' placeholder='name' />
-                            <input type="text" name='text' placeholder='text' />
+                    <form className="addEvent">
+                        <div className="fromArea">
+                            <div className="titleArea">
+                                <label htmlFor=""><h6>Title</h6></label>
+                                <input id="title" />
+                            </div>
+                            <div className="descriptionArea">
+                                <label htmlFor=""><h6>Description</h6></label>
+                                <input id="description" />
+                            </div>
                         </div>
-                        <div>
-                            <input type="text" name='description' placeholder='description' />
-                            <input type="file" name='img' placeholder='img' />
+                        <div className="fromArea1" >
+                            <div className="dateArea">
+                                <label htmlFor=""><h6>Date</h6></label>
+                                <input id="date" />
+                            </div>
+                            <div className="imgArea">
+                                <label htmlFor=""><h6>Img</h6></label>
+                                <input id="img" />
+                            </div>
                         </div>
-                        <button type='submit'>Submit you</button>
                     </form>
+                    <br/>
+                        <button className="submitButton" type='submit'>Submit</button>
+                    
                 </div>
 
             </div>

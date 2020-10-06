@@ -10,8 +10,12 @@ const Register = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
         const handleSubmit = () => {
+            const description = document.getElementById('description').value;
+            const title = document.getElementById('title').value;
+            const date = document.getElementById('date').value;
 
-            const newEvent = { ...loggedInUser }
+            
+            const newEvent = { ...loggedInUser, description,title,date}
             fetch('http://localhost:5000/registered', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -30,17 +34,19 @@ const Register = () => {
             <img src={logo2} alt=""/>
             <br/>
             <br/>
-            <form onSubmit={handleSubmit} className="registerForm">
+            <form  onSubmit={handleSubmit} className="registerForm">
                 <h3>Register Form</h3>
                 <input  className="input" name='name'  type="text" value={loggedInUser.name} placeholder="name" />
                 <input  className="input" name='email'  type="text" value={loggedInUser.email} placeholder="name" />
-                <input  className="input" name='date'  type="date" placeholder="date" />
-                <input  className="input" name='title'  type="text" placeholder="title" />
-                <input  className="input" name='description'  type="text" placeholder="description" />
+                <input  className="input" name='date'  type="date" placeholder="date" id='date' required/>
+                <input  className="input" name='title'  type="text" placeholder="title" id="title" required />
+                <input  className="input" name='description'  type="text" placeholder="description" id='description' required />
                 <br/>
                 <br/>
                 
-                    <button onClick={() => handleSubmit} className="submitBtn" type="submit" >Registration</button>
+                    <button onClick={handleSubmit} className="submitBtn">
+                        <Link to="/events">Registration</Link>
+                    </button>
                 
             </form>
         </div>

@@ -1,0 +1,52 @@
+.addEvent{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+.fromArea{
+    width: 50%;
+    margin-left: 20px;
+}
+.fromArea1{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.imgArea input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid red;
+    outline: none;
+}
+.descriptionArea input{
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    border: 1px solid red;
+    outline: none;
+}
+.dateArea input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid red;
+    outline: none;
+}
+.titleArea input{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid red;
+    outline: none;
+}
+.submitButton{
+    background-color: rgb(25, 0, 255);
+    border:none;
+    outline:none;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    height: 40px;
+    
+}
