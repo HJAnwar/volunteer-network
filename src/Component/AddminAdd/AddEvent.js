@@ -47,11 +47,11 @@ const Admin = () => {
                         <div className="fromArea1" >
                             <div className="dateArea">
                                 <label htmlFor=""><h6>Date</h6></label>
-                                <input id="date" />
+                                <input name='date'  type="date" id="date" />
                             </div>
                             <div className="imgArea">
                                 <label htmlFor=""><h6>Img</h6></label>
-                                <input id="img" />
+                                <input name='file'  type="file" id="img" />
                             </div>
                         </div>
                     </form>

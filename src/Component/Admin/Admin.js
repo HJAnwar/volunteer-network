@@ -7,7 +7,7 @@ import user from '../../img/logos/users-alt 1.png'
 import { Link } from 'react-router-dom';
 import { Button, Container } from 'react-bootstrap';
 
-// https://polar-shelf-35346.herokuapp.com/lodeUser
+
 
 const Admin = () => {
 
